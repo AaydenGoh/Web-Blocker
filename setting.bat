@@ -16,7 +16,6 @@ goto :skip
 :process
 ::echo [+] is weekday
 for /f "tokens=1 delims=/:" %%i in ("%time%") do set "hournum=%%i"
-set hournum=21
 if %hournum% leq 21 goto :addhost
 ::echo [-] Out of time rage
 goto :end
